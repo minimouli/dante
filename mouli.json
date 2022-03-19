@@ -1,0 +1,10 @@
+{
+    "rootDir": "./dist",
+    "binaries": {
+        "generator": "generator/generator",
+        "solver": "solver/solver"
+    },
+    "suites": {
+        "default": []
+    }
+}

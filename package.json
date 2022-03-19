@@ -1,0 +1,36 @@
+{
+  "name": "@minimouli/dante",
+  "version": "1.0.0",
+  "keywords": [
+    "minimouli",
+    "project=dante",
+    "school=epitech"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minimouli/dante.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minimouli/dante/issues"
+  },
+  "homepage": "https://github.com/minimouli/dante",
+  "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "res/**/*",
+    "mouli.json"
+  ],
+  "dependencies": {
+    "@minimouli/framework": "^1.0.2",
+    "@minimouli/io": "^1.0.0",
+    "@minimouli/types": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
+  }
+}
