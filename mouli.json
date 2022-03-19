@@ -5,6 +5,8 @@
         "solver": "solver/solver"
     },
     "suites": {
-        "default": []
+        "default": [
+            "basic.suite.js"
+        ]
     }
 }
