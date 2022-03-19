@@ -8,7 +8,8 @@
         "default": [
             "basic.suite.js",
             "medium.suite.js",
-            "big.suite.js"
+            "big.suite.js",
+            "solving.suite.js"
         ]
     }
 }
