@@ -19,7 +19,9 @@ suite('Solving', () => {
         await exec.execute()
 
         expect(exec).toExitWith(0)
-        await expect(exec).concurrent.toOutput([])
+        await expect(exec).concurrent.toOutput([
+            'no solution found'
+        ])
     })
 
     test('Imperfect', async () => {
@@ -49,7 +51,7 @@ suite('Solving', () => {
         maze1.checkToHaveSameStructureOf(maze2)
 
         maze2.checkSizeToBe(width, height)
-        maze2.checkHasATrailingLine()
+        maze2.checkHasNoTrailingLine()
         maze2.checkToBeSolved()
     })
 
@@ -80,7 +82,7 @@ suite('Solving', () => {
         maze1.checkToHaveSameStructureOf(maze2)
 
         maze2.checkSizeToBe(width, height)
-        maze2.checkHasATrailingLine()
+        maze2.checkHasNoTrailingLine()
         maze2.checkToBeSolved()
     })
 
@@ -111,7 +113,7 @@ suite('Solving', () => {
         maze1.checkToHaveSameStructureOf(maze2)
 
         maze2.checkSizeToBe(width, height)
-        maze2.checkHasATrailingLine()
+        maze2.checkHasNoTrailingLine()
         maze2.checkToBeSolved()
     })
 
@@ -134,7 +136,7 @@ suite('Solving', () => {
         // note: the checkToHaveSameStructureOf is disable due to memory issue
         maze.createGraph()
         maze.checkSizeToBe(width, height)
-        maze.checkHasATrailingLine()
+        maze.checkHasNoTrailingLine()
         maze.checkToBeSolved()
     })
 
