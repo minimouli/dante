@@ -20,7 +20,8 @@ suite('Solving', () => {
 
         expect(exec).toExitWith(0)
         await expect(exec).concurrent.toOutput([
-            'no solution found'
+            'no solution found',
+            ''
         ])
     })
 
