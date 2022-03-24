@@ -18,11 +18,7 @@ suite('Solving', () => {
 
         await exec.execute()
 
-        expect(exec).toExitWith(0)
-        await expect(exec).concurrent.toOutput([
-            'no solution found',
-            ''
-        ])
+        expect(exec).toExitWith(84)
     })
 
     test('Imperfect', async () => {
