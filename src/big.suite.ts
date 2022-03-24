@@ -22,6 +22,7 @@ suite('Big size generation', () => {
         const maze = new Maze(width, height)
 
         exec.pipeStdout(maze)
+        exec.setTimeout(15000)
 
         await exec.execute()
 
@@ -45,6 +46,7 @@ suite('Big size generation', () => {
         const maze = new Maze(width, height)
 
         exec.pipeStdout(maze)
+        exec.setTimeout(15000)
 
         await exec.execute()
 
@@ -68,6 +70,7 @@ suite('Big size generation', () => {
         const maze = new Maze(width, height)
 
         exec.pipeStdout(maze)
+        exec.setTimeout(15000)
 
         await exec.execute()
 
